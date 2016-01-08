@@ -1,0 +1,25 @@
+{
+    "Mathematics": {
+        "BasicConcept": {
+            "_items": [
+                "I.LogicAndProof",
+                "II.SetsAndFunctions",
+                "III.Matrices",
+                "IV.Relations"
+            ]
+        },
+        "LinearAlgebra": {
+            "_items": [
+                "I.GroupsRingsFields",
+                "II.VectorSpaces"
+            ]
+        },
+        "_items": [
+            "BasicConcept",
+            "LinearAlgebra"
+        ]
+    },
+    "_items": [
+        "Mathematics"
+    ]
+}
