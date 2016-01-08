@@ -8,4 +8,4 @@ notebookControllers.controller('dataController', ['$http', '$routeParams',
             
     }
   }
-}
+]);
