@@ -1,18 +1,16 @@
 var notebookApp = angular
-  .module('notebook', [
+  .module('notebookApp', [
     'ngRoute',
     'notebookControllers'
 ]);
 
 notebookApp.config(['$routeProvider',
-function($routeProvider) {
+function($routeProvider) {  
   $routeProvider.
-    when('/', {
-      templateUrl: 'templates/main.html',
-      controller: 'dataController',
-      controllerAs: 'vm'
-    }).      
+    when('/main', {
+      templateUrl: 'templates/main.html',      
+    }).
     otherwise({
-      redirectTo: '/'
+      redirectTo: '/main'
     });
 }]);
