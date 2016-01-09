@@ -1,11 +1,8 @@
 var notebookControllers = angular.module('notebookControllers', []);
 
-notebookControllers.controller('dataController', ['$http', '$routeParams',
-  function($http, $routeParams){
-    var vm = this;
-    
-    function getData(){
-            
-    }
+notebookControllers.controller('dataController', ['$http','$location',
+  function($http, $location){    
+    alert($location.path());
+    alert('123');            
   }
 ]);
