@@ -6,30 +6,29 @@ var notebookApp = angular
 
 notebookApp.config(['$routeProvider', '$locationProvider',
 function($routeProvider, $locationProvider) {  
-  $locationProvider.html5Mode(true);
-  alert('abc');  
+  $locationProvider.html5Mode(true);  
   $routeProvider.    
-    when('/:area/:topic/:item', {
+    when('/notebook/:area/:topic/:item', {
       templateUrl: '/notebook/templates/main.html',
-      controller: 'dataController'
-      //controllerAs: 'vm'
+      controller: 'dataController',
+      controllerAs: 'vm'
     }).
-    when('/:area/:topic', {
+    when('/notebook/:area/:topic', {
       templateUrl: '/notebook/templates/main.html',
-      controller: 'dataController'
-      //controllerAs: 'vm'
+      controller: 'dataController',
+      controllerAs: 'vm'
     }).
-    when('/:area', {
+    when('/notebook/:area', {
       templateUrl: '/notebook/templates/main.html',
-      controller: 'dataController'
-      //controllerAs: 'vm'
+      controller: 'dataController',
+      controllerAs: 'vm'
     }).
-    when('/', {
+    when('/notebook', {
       templateUrl: '/notebook/templates/main.html',
-      controller: 'dataController'
-      //controllerAs: 'vm'
-    }).
+      controller: 'dataController',
+      controllerAs: 'vm'
+    }).    
     otherwise({
-      redirectTo: '/'
+      redirectTo: '/notebook'
     });       
 }]);

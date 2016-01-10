@@ -1,1 +1,16 @@
-<h1> hello </h1>
+<div ng-if = "!vm.data_error">	
+	<ul ng-repeat="area in vm.data._items">
+		<li> {{area}} </li>
+		<ul ng-repeat="topic in vm.data[area]._items">
+			<li> {{topic}} </li>
+			<ul ng-repeat="item in vm.data[area][topic]._items">
+				<li> {{item}} </li>
+			</ul>
+		</ul>
+	</ul>	
+  </div>
+       
+</div>
+
+<h1> Data_error: {{vm.data_error}} </h1>
+<h1> Response_error: {{vm.response_error}} </h1>
