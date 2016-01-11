@@ -1,3 +1,6 @@
 *~
 content/
 .ipynb_checkpoints/
+ttt/
+manage.py
+db.sqlite3
