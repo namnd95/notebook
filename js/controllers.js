@@ -1,7 +1,7 @@
 var notebookControllers = angular.module('notebookControllers', []);
 
-notebookControllers.controller('dataController', ['$http','$location',  
-  function($http, $location){    
+notebookControllers.controller('dataController', ['$http','$location', '$sce',
+  function($http, $location, $sce){    
     var vm = this;    
     var link = $location.path();
     link = link.replace('notebook','notebook/content');    
@@ -20,7 +20,7 @@ notebookControllers.controller('dataController', ['$http','$location',
     
     $http({method: 'GET', url: link
     }).then(function successCallback(response) {
-        vm.response = response.data;        
+        vm.response = $sce.trustAsHtml(response.data);
     }, function errorCallback(response) {
         vm.response_error = true;
     });
