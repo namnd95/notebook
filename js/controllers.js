@@ -1,7 +1,7 @@
 var notebookControllers = angular.module('notebookControllers', []);
 
-notebookControllers.controller('dataController', ['$http','$location', '$sce',
-  function($http, $location, $sce){    
+notebookControllers.controller('dataController', ['$http','$location', '$sce', '$timeout', 
+  function($http, $location, $sce, $timeout){    
     var vm = this;    
     var link = $location.path();
     link = link.replace('notebook','notebook/content');    
@@ -21,8 +21,13 @@ notebookControllers.controller('dataController', ['$http','$location', '$sce',
     $http({method: 'GET', url: link
     }).then(function successCallback(response) {
         vm.response = $sce.trustAsHtml(response.data);
+        $timeout(vm.updateMathJax, 0);
     }, function errorCallback(response) {
         vm.response_error = true;
     });
+    
+    vm.updateMathJax = function () {
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
   }  
 ]);
