@@ -1,6 +1,7 @@
 import os
 
-NON_DIRECTORY = ['.git', 'content']
+# ttt is local server folder
+NON_DIRECTORY = ['.git', 'content', 'ttt']
 
 directories = []
 files = []

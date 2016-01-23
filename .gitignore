@@ -4,3 +4,4 @@ content/
 ttt/
 manage.py
 db.sqlite3
+script.sh
