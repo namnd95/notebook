@@ -11,7 +11,8 @@
         "LinearAlgebra": {
             "_items": [
                 "I.GroupsRingsFields",
-                "II.VectorSpaces"
+                "II.VectorSpaces",
+                "III.LinearTransformation"
             ]
         },
         "_items": [
