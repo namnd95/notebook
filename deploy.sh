@@ -11,8 +11,10 @@ message=$(git log -1 --pretty=%B)
 
 GH_REF=github.com/namnd95/notebook.git
 cd namnd95/notebook
-git status
+git config user.email "net12k44@gmail.com"
+git config user.name "Nguyen Duc Nam"
 rm test
-git add .
+git status
+git add --all
 git commit -m "$message"
 git push -u "https://${GH_TOKEN}@${GH_REF}" gh-pages > /dev/null 2>&1
