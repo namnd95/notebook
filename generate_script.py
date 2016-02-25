@@ -32,6 +32,8 @@ def generate_script():
     with open('script.sh','w') as f:        
         #gen directory
         for dir in directories:
+            if dir=='.':
+                dir = ''
             f.write('mkdir content/%s\n' % dir)
         
         #gen nbconvert
