@@ -14,5 +14,5 @@ cd namnd95/notebook
 git status
 rm test
 git add .
-git commit -m "Test"
+git commit -m "$message"
 git push -u "https://${GH_TOKEN}@${GH_REF}" gh-pages > /dev/null 2>&1

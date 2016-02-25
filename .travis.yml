@@ -5,7 +5,7 @@ python:
 install: 
   - "pip install -r requirements.txt"
 script:
-  - "./deploy.sh"
+  - "sh deploy.sh"
 env:
   global:  
    - secure: "UGOnu3TT+fThmhVyAWGrn+eQzBemLWVo1IO69XYcKJecPzynxcIDd8fNzK/z0rQlQT6838uTuHcOi9E4TLtGfd+vLKQr7OYsOpZlMrREn/p8p7BJ4udprB3ASJdRxnxAXYD4mVDm/HU9CrLzgQcUzoBfb7zrbRlc70vpraErdnGUy+Wx226AuneIySwtYIRN/4P3t7i9S8eyp1LaZSSUl0u7XjaXdcTlC+P8Iq1pvJZsRuR/Tr2HhmWg3GiZTwJN8z6k6Y4D1r7zogF0IdZRYoumNmi7GwC64j1LmsGU8KITr5dLoVqH+13XKCf/KqiJIbg1kGia3wcBmzsBgH+s4vQA5kAB8VTvsw7j+iv6roMsqPQ6FlUANo1KJ7HdXgxfvqNkCgW8y5a/xIe36atoKEHaWn5PX8WsvPtp2ZKzxQhwijdLSTAUElkQU5K3rkxJLkRYodJ+2VXzl/E1x7aCt3ZBkeAQ5NvwYwIo2SjQo+4zzkDLc9qOwTS9ceelNkdnOFEkF4lA1dC9lJfuqL1koHJ7GAWAGjxK4VnOG71f/hmJynazBIPq95O4Vjgt8QAVXMrLpp50f1THDrptcCodMvg4WwYpRmLmFlk9bwXc0HYYv4Ho6/gA5VsssrGB0kXX1zgSNBdOo8yYofKQvNmgaF2h/tYSugYaDEw1aZ4VXRI="
