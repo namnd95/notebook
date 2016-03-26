@@ -12,7 +12,8 @@
             "_items": [
                 "I.GroupsRingsFields",
                 "II.VectorSpaces",
-                "III.LinearTransformation"
+                "III.LinearTransformation",
+                "IV.Determinants"
             ]
         },
         "_items": [
