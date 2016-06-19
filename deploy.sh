@@ -1,6 +1,7 @@
 #!/bin/sh
 
 python generate_script.py
+cat script.sh
 sh script.sh
 python generate_json.py
 
