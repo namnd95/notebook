@@ -1,23 +1,17 @@
 {
     "Mathematics": {
         "BasicConcept": {
-            "_items": [
-                "I.LogicAndProof",
-                "II.SetsAndFunctions",
-                "III.Matrices",
-                "IV.Relations"
-            ]
+            "_items": []
+        },
+        "Calculus": {
+            "_items": []
         },
         "LinearAlgebra": {
-            "_items": [
-                "I.GroupsRingsFields",
-                "II.VectorSpaces",
-                "III.LinearTransformation",
-                "IV.Determinants"
-            ]
+            "_items": []
         },
         "_items": [
             "BasicConcept",
+            "Calculus",
             "LinearAlgebra"
         ]
     },
