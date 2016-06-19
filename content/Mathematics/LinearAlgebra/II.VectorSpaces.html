@@ -1,0 +1,292 @@
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="II.Vector-Spaces">II.Vector Spaces<a class="anchor-link" href="#II.Vector-Spaces">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.-Definition">1. Definition<a class="anchor-link" href="#1.-Definition">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>a. Definition</strong></p>
+<p>Let be a set on which two operations (<strong>vector addition</strong> and <strong>scalar multiplication</strong>) are defined. If the listed axioms are satisfied for every <strong>u</strong>, <strong>v</strong> and <strong>w</strong> in <strong>V</strong> and in and every scalar (real number) <em>c</em>, <em>d</em> and then <strong>V</strong> is called a vector space.</p>
+<ul>
+<li>Addition:<ol>
+<li>$u + v$ is in <strong>V</strong></li>
+<li>$(u + v) + w = u + (v + w)$</li>
+<li>$\exists 0 \in V : 0 + u = u + 0 = u$</li>
+<li>$\forall u \in V, \exists (-u) \in V : u + (-u) = (-u) + u = 0$</li>
+<li>$u + v = v + u$</li>
+</ol>
+</li>
+<li>Scalar:<ol>
+<li>$cu$ is in <strong>V</strong></li>
+<li>$(c+d)u = cu + du$</li>
+<li>$c(u+v) = cu + cv$</li>
+<li>$c(du) = (cd)u$</li>
+<li>$1u = u$</li>
+</ol>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>b. Properties</strong></p>
+<ul>
+<li>$0v = 0$</li>
+<li>$c0 = 0$</li>
+<li>if $cv = 0$, then $c=0$ or $u=0$</li>
+<li>$(-1)v = -v$</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Proof: To be done</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.-Linear-independence-and-linear-dependence">2. Linear independence and linear dependence<a class="anchor-link" href="#2.-Linear-independence-and-linear-dependence">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>a. Definition</strong></p>
+<ul>
+<li>A vector <strong>v</strong> in a vector space is called a <strong>linear combination</strong> of the vectors $u_1, u_2, ..., u_k$ in if <strong>v</strong> can be written in the form $$v = \sum_{i=1}^{k}c_i u_i$$ where $c_1, c_2, ... , c_k$ are scalars.</li>
+<li>A set of vectors $S={v_1, v_2, ..., v_k}$ in a vector space is called <strong>linearly independent</strong> if the vector equation $$\sum_{i=1}^{k}c_iu_i = 0$$ has only trivial solution, $\sum_{1}^{k}c_i^2$=0. If there are also nontrivial
+solutions, then S is called <strong>linearly dependent</strong>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>b. Properties</strong></p>
+<ul>
+<li>${v}$ is linearly dependent $ \Leftrightarrow v = 0 $</li>
+<li>A set $S = {v_1, v_2, ..., v_k}, k\geq2, $ is linearly dependent if and only if at least one of the vectors $v_j$ can be written as a linear combination of the other vectors in $S$.</li>
+<li>A subset of linearly independent set is linearly independent.</li>
+<li>A set contains linearly dependent set is linearly depedent.</li>
+<li>A set $S = {v_1, v_2, ..., v_k}$ is linearly independent. $S' = {v_1, v_2, ..., v_k, u}$ is linearly dependent if and only if u can be writen as a linear combination of S and the combination is unique.</li>
+<li>Proof: to be done</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.-Basis-and-dimensons">3. Basis and dimensons<a class="anchor-link" href="#3.-Basis-and-dimensons">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>a. Defenitions</strong></p>
+<ul>
+<li>Let $S = \{v_1, v_2, ..., v_k\} $ be a subset of a vector space The set is called a <strong>spanning set</strong> of if every vector in can be written as a linear combination of vectors in $S$. In such cases it is said that $S$ <em>spans</em> $V$.
+$$ S = \{v_1, v_2, ..., v_k\} \ spans \ V \Leftrightarrow \forall u \in V, \exists c: u = \sum_{i=1}^{k}c_i v_i$$</li>
+<li>A set of vectors $S = \{v_1, v_2, ..., v_k\} $ in a vector space $V$ is called a <strong>basis</strong> for $V$ if<ul>
+<li>$S$ spans $V$ </li>
+<li>$S$ is linearly independent</li>
+</ul>
+</li>
+<li>If a vector space $V$ has a basis $S$ consisting of <em>n</em> vectors, then the number <em>n</em> is called the <strong>dimension</strong> of $V$, denoted by $dim(V) = n$.<ul>
+<li>If $V$ consists of the zero vector alone, $dim(V) = 0$</li>
+<li>if $S$ consists of a finite number of vectors, $V$ is <strong>finite dimensional</strong>, otherwise V is <strong>infinite dimensional</strong>.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>b. Lemma</strong></p>
+<ul>
+<li>Let $S = \{u_1, u_2, ..., u_r\}$ is linearly independent and can be reprepresented as a linear combination of $S_2 = \{v_1, v_2, ..., v_s\}$. Then $r \le s$<ul>
+<li>Proof: To be done</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> c. Theorem </strong></p>
+<ul>
+<li>Let $S = \{v_1, v_2, ..., v_n\}$ in vector space $V$, then the following is equivelent:<ul>
+<li>(1) $S$ is basis for $V$</li>
+<li>(2) $S$ is maximum linear independent</li>
+<li>(3) $\forall u \in V, \exists! c: u = \sum_{i=1}^{n}c_iv_i$</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Every basis for $V$ contains the same elements</li>
+<li>Every spanning sets of $V$ contains a basis</li>
+<li>For every linear independent set of $V$, we can add a number of vectors to become a basis for $V$</li>
+<li>If $dim(V) = n$ then:<ul>
+<li>If $S = \{v_1, v_2, ..., v_n\} $ is a linearly independent set of vectors in then $S$ is a basis for $V$</li>
+<li>If $S = \{v_1, v_2, ..., v_n\} $ spans $V$ then $S$ is a basis for $V$</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.-Subspaces-of-Vector-Spaces">4. Subspaces of Vector Spaces<a class="anchor-link" href="#4.-Subspaces-of-Vector-Spaces">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>a. Definition</strong></p>
+<ul>
+<li>A nonempty subset $W$ of a vector space $V$ is called a <strong>subspace</strong> of $V$ if $W$ is a vector space under the operations of addition and scalar multiplication defined in V
+$$ \begin{cases} u+v \in W & \forall u, v \in W \\ cu \in W & \forall c \in K, \forall u \in W \end{cases} $$</li>
+<li>Không gian con vecto của V sinh bởi X, số chiều (<strong>To be done</strong>)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>b. Properties</strong></p>
+<ul>
+<li>If $W$ is a subspace of $V$ then $dim(W) \le dim(V)$. $dim(W)=dim(V) \Leftrightarrow W=U$</li>
+<li>If $V$ and $W$ are both subspaces of a vector space $U$ then the intersection of $V$ and $W$ (denoted by $V \cap W$) is also a subspace of $V$</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.-Coordinates-and-Change-of-Basis">5. Coordinates and Change of Basis<a class="anchor-link" href="#5.-Coordinates-and-Change-of-Basis">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>a. Coordinates representation relative to a basis</strong></p>
+<p>Let $B = \{v_1, v_2, ..., v_n\}$ be an ordered basis for a vector space $V$ and let be a vector x in $V$ such that
+$$x = \sum_{i=1}^{n}c_iv_i$$
+The scalars $c_1, c_2, ..., c_n$ are called the <strong>coordinates of relative to the basis $B$</strong>. The <strong>coordinate matrix</strong> (or <strong>coordinate vector</strong>) <strong>of $x$ relative to $B$</strong> is the column matrix in whose components are the coordinate of $x$
+$$[x]_B = \begin{bmatrix}c_1\\c_2\\.\\.\\c_n\end{bmatrix}$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>b. Transition matrix</strong></p>
+<ul>
+<li>The matrix $P$ is called the <strong>transition matrix from $B'$ to $B $</strong> if $$[x]_B=P[x]_{B'}$$</li>
+<li>Let $B = \{v_1, v_2, ..., v_n\}$ and $B' = \{u_1, u_2, ..., u_n\}$ be two bases for a vector space V. 
+  $$P = [ \ [v_1]_{B'} \ [v_2]_{B'} \ ... \ [v_n]_{B'} \ ] $$</li>
+<li>If $P$ is the transition matrix from $B'$ to $B$ then $P^{-1}$ is the transistion matrix from $B$ to $B'$ $$[x]_B=P[x]_{B'} \Rightarrow  P^{-1}[x]_B=[x]_{B'}$$</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="References">References<a class="anchor-link" href="#References">&#182;</a></h3><ul>
+<li>Elementary Linear Algebra 6th Edition, Ron Larson, David C. Falvo</li>
+<li>Đại số tuyến tính, Nguyễn Hữu Việt Hưng</li>
+</ul>
+
+</div>
+</div>
+</div>

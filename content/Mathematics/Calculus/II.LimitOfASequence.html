@@ -1,0 +1,109 @@
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="II.-Limit-of--a-Sequence">II. Limit of  a Sequence<a class="anchor-link" href="#II.-Limit-of--a-Sequence">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.-Definition">1. Definition<a class="anchor-link" href="#1.-Definition">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>a. Definition</strong></p>
+<ul>
+<li>$$ u : \mathbb{N}^{*} \to \mathbb{R} $$ Function u is a sequence number. Let $u_n$ = u(n) so the sequence can be presented as $u_1, u_2, ..., u_n$. We denote the sequence by $\{u_n\}$</li>
+<li>Given a sequence {$u_n$}. The value $L \in \mathbb{R}$ is called the limit of sequence {$u_n$} if $$\forall \epsilon > 0, \exists n_0(\epsilon) : \forall n>n_0, |u_n - L| < \epsilon$$ $$\lim_{n \to \infty} u_n = L; u_n \to L \ as \ n \to \infty$$ If L exist, then we say {$u_n$} coverages or is covergent, if not, {$u_n$} diverges or is divergent</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>b. Examples</strong>
+To be done</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.-Properties">2. Properties<a class="anchor-link" href="#2.-Properties">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>a. The uniqueness of limit</strong></p>
+<ul>
+<li>A sequence {$u_n$} has at most 1 limit</li>
+<li>Proof:</li>
+</ul>
+$$ (\forall \epsilon |a - b| < \epsilon) => a = b (Proof \ by \ contradiction) $$$$ Let \lim_{n \to \infty} u_n = L_1, \lim_{n \to \infty} u_n = L_2 $$$$ \forall \epsilon > 0, \exists n_1(\epsilon) : \forall n>n_1, |u_n - L_1| < \frac{\epsilon}{2} $$$$ \forall \epsilon > 0, \exists n_2(\epsilon) : \forall n>n_2, |u_n - L_2| < \frac{\epsilon}{2} $$$$ Let \ n = max(n_1, n_2) $$$$ |L_1 - L_2| = |L_1 - u_n + u_n - L2| \leq |L_1 - u_n| + |u_n - L2| < \frac{\epsilon}{2} + \frac{\epsilon}{2}  = \epsilon$$$$ So \ L_1 = L_2 $$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>b. Limit of subsequence of a covergent sequence</strong></p>
+<ul>
+<li>Given a sequence {$u_n$} and a sequence {$n_k$} so that $n_1 < n_2 < ... < n_k$. The sequence $u_{n_k} = u_{n_1}, u_{n_2}, ... , u_{n_k}$ is called a subsequence of {$u_n$}</li>
+<li>All subsequences of a covergent sequence are covergent and have the same limit.</li>
+<li>Proof
+$$ Let \ lim_{n \to \infty} = L => \forall \epsilon, \exists n_0 : \forall n > n_0 |u_n - L| < \epsilon $$
+$$ With \ u_{n_k} \forall k > n_0, we \ have \ n_k \geq k > n_0. Hence \ |u_{n_k} - L| < \epsilon $$</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>c. Limit of absolute value sequences</strong></p>
+<ul>
+<li>If {$u_n$} coverages and $\lim_{n \to \infty} u_n = L$ then {$|u_n|$} coverages and $ \lim_{n \to \infty} |u_n| = |L|$</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="References">References<a class="anchor-link" href="#References">&#182;</a></h3><ul>
+<li>Giáo trình Giải Tích, Trần Đức Long, Nguyễn Đình Sang, Hoàng Quốc Toàn</li>
+</ul>
+
+</div>
+</div>
+</div>

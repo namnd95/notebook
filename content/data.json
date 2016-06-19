@@ -1,13 +1,43 @@
 {
     "Mathematics": {
         "BasicConcept": {
-            "_items": []
+            "_items": [
+                "I.LogicAndProof",
+                "II.SetsAndFunctions",
+                "III.Matrices",
+                "IV.Relations"
+            ]
         },
         "Calculus": {
-            "_items": []
+            "_items": [
+                "I.RealNumbers",
+                "II.LimitOfASequence",
+                "III.LimitOfAFunction",
+                "IV.ContinuousFunction",
+                "IX.ImproperIntegrals",
+                "V.DerivativesAndDifferentials",
+                "VI.HigherDerivatives",
+                "VII.Antiderivatives",
+                "VIII.Integrals",
+                "X.SeriesAndPowerSeries",
+                "XI.SequencesAndSeriesOfFunctions",
+                "XII.FourierSeries",
+                "XIII.IntroductionToMetricSpace",
+                "XIV.ContinuousMutivariblesFunction",
+                "XIV.VectorCalculus",
+                "XV.PartialDervatives",
+                "XVI.ApplicationsOfPartialDerivatives",
+                "XVII.IntegralsDependingOnParameter",
+                "XVIII.MultipleIntegrals"
+            ]
         },
         "LinearAlgebra": {
-            "_items": []
+            "_items": [
+                "I.GroupsRingsFields",
+                "II.VectorSpaces",
+                "III.LinearTransformation",
+                "IV.Determinants"
+            ]
         },
         "_items": [
             "BasicConcept",
