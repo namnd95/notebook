@@ -38,7 +38,10 @@ def generate_script():
         
         #gen nbconvert
         for file in files:
-            f.write('jupyter nbconvert --to html --template basic %s --output content/%s\n' % (file, name_part(file)))    
+            extra = ''
+            for i in xrange(file.count('/')-1):
+                extra += '../'
+            f.write('jupyter nbconvert --to html --template basic %s --output %scontent/%s\n' % (file, extra, name_part(file)))    
 
 if __name__ == '__main__':            
     travel('.')
