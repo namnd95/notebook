@@ -1,0 +1,21 @@
+{
+    "Mathematics": {
+        "BasicConcept": {
+            "_items": []
+        },
+        "Calculus": {
+            "_items": []
+        },
+        "LinearAlgebra": {
+            "_items": []
+        },
+        "_items": [
+            "BasicConcept",
+            "Calculus",
+            "LinearAlgebra"
+        ]
+    },
+    "_items": [
+        "Mathematics"
+    ]
+}
